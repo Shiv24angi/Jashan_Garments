@@ -12,7 +12,8 @@ const ClothingImage = ({ src, size, rotation, opacity }: { src: string; size: nu
       width: size,
       height: size,
       objectFit: "contain",
-      filter: "brightness(0) saturate(100%) invert(70%) sepia(0%)",
+      filter: "invert(1) brightness(1.2) contrast(1.1)",
+      mixBlendMode: "screen",
     }}
   />
 );
