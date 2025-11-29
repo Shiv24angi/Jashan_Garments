@@ -12,7 +12,7 @@ const ClothingImage = ({ src, size, rotation, opacity }: { src: string; size: nu
       width: size,
       height: size,
       objectFit: "contain",
-      filter: "grayscale(100%) contrast(1.3) brightness(0.85)",
+      filter: "grayscale(100%) brightness(0.6) contrast(1.8) invert(0.15)",
     }}
   />
 );
