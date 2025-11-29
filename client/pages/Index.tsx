@@ -3,6 +3,7 @@ import { ArrowRight, Star } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
 import { useCart } from "@/contexts/CartContext";
 import { FEATURED_PRODUCTS } from "@/data/products";
+import HeroBanner from "@/components/HeroBanner";
 
 export default function Index() {
   const { addItem } = useCart();
@@ -10,38 +11,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-secondary/10 opacity-40" />
-        <div className="relative container mx-auto px-4 py-20 md:py-32">
-          <div className="text-center space-y-6 max-w-3xl mx-auto animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-              Authentic Garments,{" "}
-              <span className="text-primary">Timeless Style</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Discover our exclusive collection of premium quality garments crafted
-              with tradition and modern design. Each piece tells a story of elegance.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link
-                to="/shop"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                Shop Now
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <a
-                href="https://www.instagram.com/jashangarments_?igsh=MW14N2xtdzk5OTI2cw=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-all duration-300"
-              >
-                Follow on Instagram
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroBanner />
 
       {/* Featured Products Section */}
       <section className="py-16 md:py-24 bg-card/50 border-t border-border">
