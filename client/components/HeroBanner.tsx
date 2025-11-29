@@ -18,23 +18,30 @@ const ClothingImage = ({ src, size, rotation, opacity }: { src: string; size: nu
 );
 
 export default function HeroBanner() {
+  // Image URLs for clothing icons
+  const poloShirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F82c6fc6e5cc549ca9b54b51b097c1559?format=webp&width=800";
+  const tshirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F0230a059b04b492588907df3b777298b?format=webp&width=800";
+  const pantsUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F500fc4edb93c4f07867e48a913757d9b?format=webp&width=800";
+  const jacketUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2Fb75104e72d2d47cd963cad8f85d95058?format=webp&width=800";
+  const hoodieUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2Fa792da0c7a0b45b3bb78d981989876fe?format=webp&width=800";
+
   // Generate scattered icon positions and variations
   const iconPositions = [
     // Top section
-    { Component: ShirtIcon, top: "8%", left: "5%", size: 80, rotation: 15, opacity: 0.3 },
-    { Component: PantsIcon, top: "12%", left: "22%", size: 120, rotation: -25, opacity: 0.25 },
-    { Component: JacketIcon, top: "5%", left: "78%", size: 100, rotation: 35, opacity: 0.3 },
-    { Component: HoodieIcon, top: "15%", left: "88%", size: 90, rotation: -15, opacity: 0.28 },
-    
+    { src: poloShirtUrl, top: "8%", left: "5%", size: 140, rotation: 15, opacity: 0.35 },
+    { src: pantsUrl, top: "12%", left: "22%", size: 180, rotation: -25, opacity: 0.3 },
+    { src: jacketUrl, top: "5%", left: "78%", size: 160, rotation: 35, opacity: 0.35 },
+    { src: hoodieUrl, top: "15%", left: "88%", size: 150, rotation: -15, opacity: 0.33 },
+
     // Middle section
-    { Component: TShirtIcon, top: "35%", left: "3%", size: 110, rotation: 45, opacity: 0.28 },
-    { Component: JacketIcon, top: "38%", left: "85%", size: 95, rotation: -35, opacity: 0.32 },
-    
+    { src: tshirtUrl, top: "35%", left: "3%", size: 170, rotation: 45, opacity: 0.32 },
+    { src: jacketUrl, top: "38%", left: "85%", size: 155, rotation: -35, opacity: 0.37 },
+
     // Bottom section
-    { Component: HoodieIcon, top: "70%", left: "8%", size: 100, rotation: 20, opacity: 0.27 },
-    { Component: PantsIcon, top: "68%", left: "25%", size: 85, rotation: -40, opacity: 0.3 },
-    { Component: ShirtIcon, top: "72%", left: "72%", size: 105, rotation: 60, opacity: 0.29 },
-    { Component: TShirtIcon, top: "65%", left: "88%", size: 95, rotation: -20, opacity: 0.26 },
+    { src: hoodieUrl, top: "70%", left: "8%", size: 160, rotation: 20, opacity: 0.31 },
+    { src: pantsUrl, top: "68%", left: "25%", size: 145, rotation: -40, opacity: 0.35 },
+    { src: poloShirtUrl, top: "72%", left: "72%", size: 165, rotation: 60, opacity: 0.34 },
+    { src: tshirtUrl, top: "65%", left: "88%", size: 155, rotation: -20, opacity: 0.3 },
   ];
 
   return (
