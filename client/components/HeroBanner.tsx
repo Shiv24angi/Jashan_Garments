@@ -18,12 +18,12 @@ const ClothingImage = ({ src, size, rotation, opacity }: { src: string; size: nu
 );
 
 export default function HeroBanner() {
-  // Image URLs for clothing icons
-  const jacketUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2Fcbb9915290d04152bd8d8a403f8779ee?format=webp&width=800";
-  const hoodieUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F7b350a2269f04c7ebce6d8fed74db7d7?format=webp&width=800";
-  const poloShirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F96a43f7f7b434da3b4a896ff50c8cb4f?format=webp&width=800";
-  const pantsUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F93fc7f3c13c9413a9c69e9d5aadc6612?format=webp&width=800";
-  const tshirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F91e92945c5fe4cbca93bff40c2f6720b?format=webp&width=800";
+  // Image URLs for clothing icons (transparent background versions)
+  const jacketUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F0a174e660a8f43e3af37ede29c70057c?format=webp&width=800";
+  const hoodieUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F0ca611eda5484ea2af146dbca6167027?format=webp&width=800";
+  const poloShirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F48d11aacd2ce4635a43cd195761f7653?format=webp&width=800";
+  const pantsUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F97b5c58743064072833fb8d4275e8af3?format=webp&width=800";
+  const tshirtUrl = "https://cdn.builder.io/api/v1/image/assets%2F23e3a26c44c946f88c17ad9d5e4942bc%2F8817c22a7ec243d4b3931b9de99dd13c?format=webp&width=800";
 
   // Generate scattered icon positions and variations
   const iconPositions = [
