@@ -2,19 +2,18 @@ import { Link } from "react-router-dom";
 
 // Clothing icon image component with background removed
 const ClothingImage = ({ src, size, rotation, opacity }: { src: string; size: number; rotation: number; opacity: number }) => (
-  <div
+  <img
+    src={src}
+    alt="clothing icon"
     className="absolute"
     style={{
       opacity,
       transform: `rotate(${rotation}deg)`,
       width: size,
       height: size,
-      backgroundImage: `url(${src})`,
-      backgroundSize: "contain",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      filter: "brightness(0) invert(1)",
-      mixBlendMode: "lighten",
+      objectFit: "contain",
+      mixBlendMode: "multiply",
+      filter: "invert(1) brightness(1.15)",
     }}
   />
 );
