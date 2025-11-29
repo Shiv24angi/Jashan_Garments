@@ -28,20 +28,20 @@ export default function HeroBanner() {
   // Generate scattered icon positions and variations
   const iconPositions = [
     // Top section
-    { src: poloShirtUrl, top: "8%", left: "5%", size: 140, rotation: 15, opacity: 0.35 },
-    { src: pantsUrl, top: "12%", left: "22%", size: 180, rotation: -25, opacity: 0.3 },
-    { src: jacketUrl, top: "5%", left: "78%", size: 160, rotation: 35, opacity: 0.35 },
-    { src: hoodieUrl, top: "15%", left: "88%", size: 150, rotation: -15, opacity: 0.33 },
+    { src: poloShirtUrl, top: "8%", left: "5%", size: 140, rotation: 15, opacity: 0.5 },
+    { src: pantsUrl, top: "12%", left: "22%", size: 180, rotation: -25, opacity: 0.5 },
+    { src: jacketUrl, top: "5%", left: "78%", size: 160, rotation: 35, opacity: 0.5 },
+    { src: hoodieUrl, top: "15%", left: "88%", size: 150, rotation: -15, opacity: 0.5 },
 
     // Middle section
-    { src: tshirtUrl, top: "35%", left: "3%", size: 170, rotation: 45, opacity: 0.32 },
-    { src: jacketUrl, top: "38%", left: "85%", size: 155, rotation: -35, opacity: 0.37 },
+    { src: tshirtUrl, top: "35%", left: "3%", size: 170, rotation: 45, opacity: 0.5 },
+    { src: jacketUrl, top: "38%", left: "85%", size: 155, rotation: -35, opacity: 0.5 },
 
     // Bottom section
-    { src: hoodieUrl, top: "70%", left: "8%", size: 160, rotation: 20, opacity: 0.31 },
-    { src: pantsUrl, top: "68%", left: "25%", size: 145, rotation: -40, opacity: 0.35 },
-    { src: poloShirtUrl, top: "72%", left: "72%", size: 165, rotation: 60, opacity: 0.34 },
-    { src: tshirtUrl, top: "65%", left: "88%", size: 155, rotation: -20, opacity: 0.3 },
+    { src: hoodieUrl, top: "70%", left: "8%", size: 160, rotation: 20, opacity: 0.5 },
+    { src: pantsUrl, top: "68%", left: "25%", size: 145, rotation: -40, opacity: 0.5 },
+    { src: poloShirtUrl, top: "72%", left: "72%", size: 165, rotation: 60, opacity: 0.5 },
+    { src: tshirtUrl, top: "65%", left: "88%", size: 155, rotation: -20, opacity: 0.5 },
   ];
 
   return (
