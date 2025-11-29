@@ -62,7 +62,7 @@ export default function HeroBanner() {
               height: item.size,
             }}
           >
-            <item.Component size={item.size} rotation={item.rotation} opacity={item.opacity} />
+            <ClothingImage src={item.src} size={item.size} rotation={item.rotation} opacity={item.opacity} />
           </div>
         ))}
       </div>
